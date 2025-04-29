@@ -1,3 +1,12 @@
+DO $$ DECLARE
+    r RECORD;
+BEGIN
+    FOR r IN (SELECT tablename FROM pg_tables WHERE schemaname = 'public') LOOP
+        EXECUTE 'DROP TABLE IF EXISTS "' || r.tablename || '" CASCADE';
+    END LOOP;
+END $$;
+
+
 CREATE TABLE "Produtora" (
   "id_prod" varchar(30) PRIMARY KEY
   ,"nome_produtora" varchar(100)
@@ -25,6 +34,7 @@ CREATE TABLE "Serie" (
   ,"nome" varchar(100) UNIQUE
   ,"restricao_idade" integer
   ,genero varchar(100)
+  ,qtd_temporadas integer
   ,id_prod varchar(30)
   ,id_diretor varchar(30)
   ,FOREIGN KEY ("id_prod") REFERENCES "Produtora" ("id_prod")
