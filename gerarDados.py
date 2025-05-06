@@ -280,7 +280,7 @@ def gerar_temporadas(series):
                 "qtd_ep" : random.randint(1, 12), 
                 "nota_avaliacao" : round(random.uniform(0, 10), 2),
                 "numero_temp" : i+1,
-                ,data_lancamento date
+                "data_lancamento": faker.date_this_decade(),
                 "id_serie" : id_prod,
                 "id_ator" : faker.random_element(atores_por_prod[id_prod])
                  })
