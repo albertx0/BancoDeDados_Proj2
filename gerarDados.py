@@ -9,10 +9,10 @@ nums = string.digits
 
 # /////////////////////
 # intervalo dos dados
-qtd_produtoras = 3
-qtd_atores = 10
-qtd_diretores = 5
-qtd_series = 5
+qtd_produtoras = 6
+qtd_atores = 20
+qtd_diretores = 10
+qtd_series = 20
 # /////////////////////
 
 # utilizacao de sets globais
