@@ -32,7 +32,7 @@ CREATE TABLE "Ator" (
 CREATE TABLE "Serie" (
   "id_serie" varchar(30) PRIMARY KEY
   ,"nome" varchar(100) UNIQUE
-  ,"restricao_idade" integer
+  ,"restricao_idade" varchar(10)
   ,genero varchar(100)
   ,qtd_temporadas integer
   ,id_prod varchar(30)
@@ -48,6 +48,7 @@ CREATE TABLE "Temporada" (
   ,numero_temp integer
   ,id_serie varchar(30)
   ,id_ator varchar(30)
+  ,data_lancamento date
   ,FOREIGN KEY ("id_serie") REFERENCES "Serie" ("id_serie")
   ,FOREIGN KEY ("id_ator") REFERENCES "Ator" ("id_ator")
 );
