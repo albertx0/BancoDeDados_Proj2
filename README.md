@@ -17,7 +17,6 @@ Banco de dados relacional para gestão de séries, com:
 - Cadastro completo de produtoras, diretores e elenco
 - Organização hierárquica de séries, temporadas e episódios
 - Controle salarial e de avaliações
-- 
 ---
 
 ## Como Executar
