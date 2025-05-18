@@ -49,6 +49,7 @@ python gerarDados.py
 
 # Modelo Entidade-Relacionamento (MER)
 
+<img width="1599" alt="Captura de Tela 2025-05-18 às 17 24 58" src="https://github.com/user-attachments/assets/98da1f41-8822-4cdd-b86a-965b1fbd7bd7" />
 
 
 # Modelo Relacional (MR)
