@@ -53,6 +53,7 @@ python gerarDados.py
 
 
 # Modelo Relacional (MR)
+![image](https://github.com/user-attachments/assets/26e1cbfb-cbff-4980-923e-3f0fb0975883)
 
 
 
